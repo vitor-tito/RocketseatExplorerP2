@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+
+  /* Função de mudar fndo para cor gradiente */
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 0%, rgba(227, 255, 248, 0.38) 100%);
+
+  min-height: 100vh; /*Defini uma altura mínima do "body" de 100% do viewport (Toda a área disponível visível)*/
+
+}
+
+.page {
+  width: 1000px;
+  margin: 0px auto;
+  padding-top: 64px;
+}
+
+nav {
+  display: flex; /* Definindo a visualização da caixa como flexivel, habilitando novos parâmetros */
+  justify-content: space-between; /* Colocando espaço entre os dois elementos até as extremidades */
+  align-items: center; /* Alinhando os elementos no eixo vertical, utilizando-se do "main axis"*/
+}
+
+ul {
+  list-style-type: none; /* Removendo estilo da lista */
+
+  display: flex; /* Definindo a visualização da caixa como flexivel, habilitando novos parâmetros */
+  gap: 48px; /* Colocando espaço entre os elementos de forma igualitária */
+
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Mulish', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #1F1534;
+}
+
+ul li a {
+  opacity: 0.5; /*Muda a opacidade do elemento (0 -> 1)*/
+}
+
+/* pseudo class */
+ul li a:hover {
+  font-weight: bold;
+  opacity: 1; /*Muda a opacidade do elemento (0 -> 1)*/
+}
+
+main {
+  display: flex; /* Definindo a visualização da caixa como flexivel, habilitando novos parâmetros */
+  justify-content: space-between; /* Colocando espaço entre os dois elementos até as extremidades */
+  align-items: center; /* Alinhando os elementos no eixo vertical, utilizando-se do "main axis"*/
+}
+
+h1{
+  font-family: 'Mulish', sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  color: #1F1534;
+  font-weight: 400;
+
+  width: 490px;
+
+}
+
+h1 strong {
+  color: #89C5CC;
+}
+
+section p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+  margin: 40px 0px;
+}
+
+button {
+  text-transform: uppercase; /*Colocando texto dentro do botão como caixa alta"*/
+  font-family: 'Open Sans', sans-serif;
+  
+  background: #69B99D; /*Colocando cor de fundo na caixa*/
+  border: 0; /*Remove a borda do botão*/
+  padding: 14px 32px 15px;
+
+  display: flex; /* Definindo a visualização da caixa como flexivel, habilitando novos parâmetros */
+  align-items: center; /* Alinhando os elementos no eixo vertical, utilizando-se do "main axis"*/
+  justify-content: center; /*Centralizando os elementos horizontalmente*/
+  gap: 4px; /* Colocando espaço entre os elementos de forma igualitária */
+
+  border-radius: 4px; /*Arredonda as bordas da caixa do botão*/
+
+  cursor: pointer /*Habilita troca de seletor do mouse para "mãozinha" ao colocar o mouse em cima do elemento*/
+
+}
+
+button:hover {
+  background: #4ea788; /*Colocando cor de fundo na caixa*/
+}
+
+footer {
+  font-size: 14px;
+  line-height: 28px;
+
+  text-align: center;
+
+  margin-top: 80px;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
