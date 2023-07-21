@@ -12,13 +12,15 @@ body {
 .page {
   width: 1000px;
   margin: 0px auto;
-  padding-top: 64px;
+  padding-top: 65px;
 }
 
 nav {
   display: flex; /* Definindo a visualização da caixa como flexivel, habilitando novos parâmetros */
   justify-content: space-between; /* Colocando espaço entre os dois elementos até as extremidades */
   align-items: center; /* Alinhando os elementos no eixo vertical, utilizando-se do "main axis"*/
+ 
+  margin-bottom: 55px;
 }
 
 ul {
@@ -78,6 +80,7 @@ section p {
 
 button {
   text-transform: uppercase; /*Colocando texto dentro do botão como caixa alta"*/
+  color: white;
   font-family: 'Open Sans', sans-serif;
   
   background: #69B99D; /*Colocando cor de fundo na caixa*/
